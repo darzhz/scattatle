@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+ <html>
+   <head>
+     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="author" content="Darsh">
+     <title>Scattatle</title>
+    <script type="text/javascript" charset="uutf-8" src="app.js" defer>
+     </script>
+     <script type="text/javascript" charset="uutf-8" src="Ball.js">
+     </script>
+        <script type="text/javascript" charset="uutf-8" src="p5.min.js">
+     </script>
+     <style type="text/css" media="all">
+       body{
+         margin:0;
+         padding: 0;
+         background-color: black;
+         overflow-y: hidden;
+         overflow-x: hidden;
+       }
+       .panel{
+        background-color: green;
+         font-size: 2rem;
+         border:none;
+         margin:0;
+         padding: 0;
+         position: fixed;
+         z-index: 1;
+       }
+       #btn{
+         height: 50px;
+         width: 80%;
+         background-color: green;
+         font-size: 2rem;
+         border:none;
+         margin:0;
+         padding: 0;
+         position: fixed;
+         z-index: 1;
+       }
+       #btn2{
+        height: 50px;
+        left: 80%;
+        width: 20%;
+       }
+     </style>
+   </head>
+   <body>
+     <p style="color:white; position:fixed;left:5vw;z-index:2;">press start!</p>
+     <button class="panel" id="btn" onclick="toggle()">Start</button>
+     <button class="panel"id="btn2" onclick="toggleGrav()">Gravity</button>
+   </body>
+ </html>
